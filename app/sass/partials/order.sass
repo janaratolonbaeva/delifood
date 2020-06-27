@@ -1,0 +1,300 @@
+.order
+	padding: 10px 15px
+	+tablet
+		padding: 10px 0
+	.title
+		margin-bottom: 20px
+	&__form
+		+tablet
+			float: left
+			width: calc(100% - 295px)
+			padding-right: 10px
+	&__item
+		border-radius: 10px
+		background: #fff
+		padding: 25px 10px 25px 25px
+		margin-bottom: 10px
+		h4 
+			font-size: 24px
+			margin-bottom: 30px
+			line-height: normal
+			font-weight: normal
+			span
+				margin-left: 35px
+				opacity: 0.6
+		.map-link
+			display: block
+			svg 
+				vertical-align: middle
+				margin-right: 10px
+			span
+				text-decoration: underline
+	&__menu
+		margin-bottom: 30px
+	&__tabs
+		&.ui-tabs
+			&.ui-widget.ui-widget-content
+				border: none
+				font-family: inherit
+				font-size: inherit
+				line-height: inherit
+				color: inherit
+			ul.ui-corner-all
+				background: transparent
+				border: none
+			.ui-tabs-panel
+				padding: 0
+			li 
+				&.ui-state-default
+					display: inline-block
+					border: none
+					background: transparent
+					float: none
+					margin: 0
+					&:not(:last-child)
+						margin-right: 35px
+					a 
+						font-size: 24px
+						line-height: normal
+						opacity: 0.6
+						padding: 0
+						color: inherit
+				&.ui-tabs-active
+					a 
+						opacity: 1
+						color: #473100
+	&__col
+		+minWidth550
+			float: left
+		&-3 
+			width: 100%
+			+desktop
+				width: 33.3%
+		&-6
+			width: 100%
+			+minWidth1100
+				width: 66.6%
+		&-2 
+			+minWidth550
+				width: 50%
+			+minWidth1100
+				width: 16.2%
+	&__info
+		margin-right: 15px
+		&-title
+			margin-bottom: 10px
+			display: block
+			opacity: 0.7
+			i 
+				color: #ff6c7b
+		input
+			width: 100%
+			background: rgba(248, 248, 248, 0.439)
+			border-radius: 4px
+			line-height: 38px
+			padding: 0 10px
+			display: block
+			margin-bottom: 10px
+	&__row
+		margin-bottom: 10px
+	&__radio
+		float: left
+		margin-right: 40px
+		input
+			display: none
+			&:checked ~ label::after
+				opacity: 1
+		label
+			display: block
+			position: relative
+			padding-left: 10px
+			cursor: pointer
+			line-height: 38px
+			&::before,
+			&::after
+				content: ''
+				position: absolute
+				border-radius: 50%
+			&::before
+				top: 12px
+				left: -10px
+				border: 1px solid #473100
+				width: 11px
+				height: 11px
+			&::after
+				top: 15px
+				left: -7px
+				background: #473100
+				width: 7px
+				height: 7px
+				opacity: 0
+				transition: $transition
+	&__shortChange
+		float: left
+		background: rgba(248, 248, 248, 0.439)
+		border-radius: 4px
+		line-height: 38px
+		padding: 0 10px
+		margin-bottom: 10px
+		label
+			margin-right: 10px
+		input
+			width: 60px
+			line-height: 38px
+			display: inline-block
+			text-align: right
+	&__select
+		float: left
+		margin-right: 40px
+		.ui-selectmenu-button.ui-button
+			background: rgba(248, 248, 248, 0.439)
+			border-radius: 4px
+			line-height: 38px
+			padding: 0 10px
+			display: block
+			margin-bottom: 10px
+			width: 140px
+			border: none
+			&.ui-selectmenu-button-open
+				border-bottom-left-radius: 0
+				border-bottom-right-radius: 0
+				.ui-button .ui-icon
+					transform: rotate(90deg)
+			.ui-icon
+				background-image: url('../img/down-arrow.svg')
+				background-repeat: no-repeat
+				background-position: center
+				margin-top: 10px
+			&.ui-selectmenu-button-open
+				.ui-icon
+					transform: rotate(180deg)
+			&.ui-selectmenu-button-closed
+				.ui-icon
+					transform: rotate(0)
+	&__agree
+		margin: 15px 0 10px
+		border-top: 2px solid #fff
+		padding: 10px 0
+		text-align: center
+		+minWidth550
+			text-align: left
+		&-text 
+			font-size: 12px
+			opacity: 0.6
+			margin-bottom: 10px
+			+minWidth550 
+				float: left
+				width: calc(100% - 150px)
+				margin-bottom: 0
+			+container
+				padding-top: 15px
+			a 
+				&:hover
+					text-decoration: underline
+		.btn
+			+minWidth550
+				float: right
+	&__basket
+		counter-reset: accordoinItem
+		border-radius: 4px
+		+tablet
+			width: 295px
+			float: left
+		&.ui-widget
+			font-family: inherit
+			line-height: inherit
+			color: inherit
+			font-size: inherit
+	&__accordion
+		color: inherit
+		outline: none
+		margin: 0 0 10px 0
+		border: none
+		border-radius: 0
+		.ui-icon
+			display: none
+		&-content
+			.left
+				float: left
+			.right
+				float: right
+				text-align: right
+			&.ui-accordion-content
+				border: none
+				padding: 10px
+			&.ui-accordion-content-active
+				background: #fff
+				color: inherit
+				border: none
+				opacity: 0.8
+		h6 
+			font-weight: normal
+			font-size: 18px
+			line-height: 48px
+			position: relative
+			background: #fff
+			&::before
+				counter-increment: accordoinItem
+				content: counter(accordoinItem)
+				border-radius: 50%
+				background: $colorWarning
+				display: inline-block
+				width: 22px
+				height: 22px
+				text-align: center
+				line-height: 22px
+				font-size: 12px
+				position: absolute
+				top: 13px
+				left: 10px
+			&.ui-accordion-header
+				padding: 0 10px 0 45px
+				margin: 0
+				font-size: 18px
+				border: none
+			&.ui-state-active
+				background: #fff
+				color: inherit
+				border: none
+				opacity: 0.8
+				&::after
+					content: ''
+					position: absolute
+					bottom: 0
+					left: 50%
+					transform: translateX(-50%)
+					width: calc(100% - 20px)
+					background: rgb(248, 248, 248)
+					height: 2px
+.ui-selectmenu-menu
+	.ui-menu 
+		border: none
+		background: rgb(248, 248, 248)
+		border-bottom-left-radius: 4px
+		border-bottom-right-radius: 4px
+		.ui-menu-item-wrapper
+			line-height: 38px
+			padding: 0 10px
+	.ui-state-active, .ui-widget-content .ui-state-active
+		background: $colorWarning
+		border: none
+		color: #473100
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

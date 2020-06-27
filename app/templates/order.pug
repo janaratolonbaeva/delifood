@@ -1,0 +1,126 @@
+doctype html
+html(lang="ru")
+	head
+		include includes/head
+		title= title
+	body
+		include includes/svg
+		include includes/header
+		.container
+			ul.breadcrumbs
+				li
+					a(href="index.html") Главная 
+				li - Оформление заказа
+					span 
+			section.order
+				h2.title Оформление заказа
+				.clearfix
+					.order__form
+						form
+							.order__item
+								h4 Контактная информация
+								.clearfix
+									.order__col.order__col-3
+										.order__info
+											label.order__info-title Имя
+												i *
+											input(type="text")
+									.order__col.order__col-3
+										.order__info
+											label.order__info-title Номер телефона
+												i *
+											input(type="tel")
+									.order__col.order__col-3
+										.order__info
+											label.order__info-title E-mail
+												i *
+											input(type="email")
+							.order__item.order__tabs
+								ul.order__menu
+									li
+										a(href="#order-tab-1") Доставка
+									li
+										a(href="#order-tab-2") Самовывоз
+								#order-tab-1
+									.clearfix
+										.order__col.order__col-6
+											.order__info
+												label.order__info-title Адрес доставки
+													i *
+												input(type="text")
+										.order__col.order__col-2
+											.order__info
+												label.order__info-title Квартира/офис
+												input(type="text")
+										.order__col.order__col-2
+											.order__info
+												label.order__info-title Этаж
+												input(type="text")
+									a(href="#").map-link
+										svg(width="25", height="25")
+											use(xlink:href="#ic-placeholder")
+										span Указать на карте
+								#order-tab-2
+									p Самовывоз
+							.order__item
+								h4 Время доставки и оплата
+								.order__row
+									span.order__info-title Время доставки
+										i *
+									.clearfix
+										.order__radio
+											input#time1(type="radio", name="time", checked)
+											label(for="time1") Как можно скорее
+										.order__radio
+											input#time2(type="radio", name="time")
+											label(for="time2") Выбрать время
+										.order__select
+											select
+												option(selected) Сегодня
+												option Завтра
+												option Послезавтра
+										.order__select
+											select
+												option(selected) Время доставки
+												option до обеда
+												option после обеда
+								.order__row
+									span.order__info-title Оплата
+										i *
+									.clearfix
+										.order__radio
+											input#pay1(type="radio", name="pay", checked)
+											label(for="pay1") Наличными
+										.order__radio
+											input#pay2(type="radio", name="pay")
+											label(for="pay2") Картой на сайте
+										.order__shortChange
+											label Сдача с
+											input(type="number")
+							.order__agree.clearfix
+								.order__agree-text
+									p Нажимая "Заказать", Вы даёте Согласие на обработку Ваших персональных данных и принимаете   
+										a(href="#") Пользовательское соглашение
+								button(type="submit").btn.btn--lg Заказать
+					.order__basket.accordion
+						.order__accordion
+							h6 Корзина
+							.order__accordion-content.clearfix
+								span.left Сумма заказа
+								span.right 900₽
+						.order__accordion
+							h6 Оформление
+							.order__accordion-content.clearfix
+								span.left Сумма заказа
+								span.right 900₽
+					
+		include includes/footer
+
+		script(src="libs/jquery/jquery-3.4.1.min.js")
+		script(src="libs/matchHeight/matchHeight.js")
+		script(src="libs/aos-master/aos.js")
+		script(src="libs/fancybox/jquery.fancybox.min.js")
+		script(src="libs/slick/slick.min.js")
+		script(src="libs/jquery-ui-1.12.1/jquery-ui.min.js")
+		script(src="libs/jqueryScrollBar/jquery.mCustomScrollbar.js")
+		script(src="js/main.js")

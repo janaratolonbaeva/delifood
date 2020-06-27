@@ -1,0 +1,28 @@
+doctype html
+html(lang="ru")
+  head
+    include includes/head
+    title= title
+  body
+    include includes/svg
+    include includes/header
+    .container
+      ul.breadcrumbs
+        li
+          a(href="index.html") Главная 
+        li
+          span - Пицца
+        li
+          span - Чизбургер пицца 
+      include includes/card
+      include includes/delivery
+    include includes/footer
+
+    script(src="libs/jquery/jquery-3.4.1.min.js")
+    script(src="libs/matchHeight/matchHeight.js")
+    script(src="libs/aos-master/aos.js")
+    script(src="libs/fancybox/jquery.fancybox.min.js")
+    script(src="libs/slick/slick.min.js")
+    script(src="libs/jquery-ui-1.12.1/jquery-ui.min.js")
+    script(src="libs/jqueryScrollBar/jquery.mCustomScrollbar.js")
+    script(src="js/main.js")

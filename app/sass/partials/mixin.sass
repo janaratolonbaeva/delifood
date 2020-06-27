@@ -1,0 +1,51 @@
+$transition: all 0.35s ease
+$colorWarning: #fdd692
+
+=mini
+  @media screen and (min-width: 400px)
+    @content
+=xs
+  @media screen and (min-width: 500px)
+    @content
+=minWidth550
+  @media screen and (min-width: 550px)
+    @content
+=mobile
+  @media screen and (min-width: 650px)
+    @content
+=tablet
+  @media screen and (min-width: 768px)
+    @content
+=minWidth850
+  @media screen and (min-width: 850px)
+    @content
+=desktop
+  @media screen and (min-width: 992px)
+    @content
+=minWidth1100
+  @media screen and (min-width: 1100px)
+    @content
+=container
+  @media screen and (min-width: 1170px)
+    @content
+=minWidth1350
+  @media screen and (min-width: 1350px)
+    @content
+
+=placeholder
+  &::-webkit-input-placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+
+=circle($color, $width, $height)
+  border-radius: 50%
+  background: $color
+  width: $width
+  height: $height
+  display: block
+

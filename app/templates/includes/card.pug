@@ -1,0 +1,131 @@
+include mixin
+section.card
+	.clearfix
+		.category__basket
+			.category__basket-header
+				span КОРЗИНА
+			.category__basket-main
+				.category__basket-item
+					.clearfix
+						.category__basket-image
+							img(src="uploads/category-basket-img-1.jpg", alt="Product image")
+						.category__basket-content.clearfix
+							.category__basket-content__choice
+								h6 Чизбургер-пицца
+								.clearfix
+									svg.with(width="20", height="20")
+										use(xlink:href="#ic-chili")
+									span 35см
+									span Тонкое
+							svg(width="10", height="10").cancel
+								use(xlink:href="#ic-cancel")
+					.clearfix
+						.category__basket-amount
+							span -
+							input(type="number", value="1")
+							span +
+						.category__basket-sum
+							span Итого
+							label
+								input(type="number", value="452")
+								| ₽
+				.category__basket-item
+					.clearfix
+						.category__basket-image
+							img(src="uploads/category-basket-img-1.jpg", alt="Product image")
+						.category__basket-content.clearfix
+							.category__basket-content__choice
+								h6 Чизбургер-пицца
+								.clearfix
+									svg.with(width="20", height="20")
+										use(xlink:href="#ic-chili")
+									span 35см
+									span Тонкое
+							svg(width="10", height="10").cancel
+								use(xlink:href="#ic-cancel")
+					.clearfix
+						.category__basket-amount
+							span -
+							input(type="number", value="1")
+							span +
+						.category__basket-sum
+							span Итого
+							label
+								input(type="number", value="452")
+								| ₽
+				.category__basket-total
+					.clearfix
+						span.total-text Сумма заказа
+						.category__basket-sum
+							label
+								input(type="number", value="900")
+								| ₽
+					.clearfix
+						button(type="reset")
+							svg(width="10", height="10").cancel
+								use(xlink:href="#ic-cancel")
+							| Очистить
+						button.btn.btn--lg Оформить заказ			
+		.category__tab-wrapper
+			.clearfix
+				a(href="#").menu-link
+					svg(width="45", height="30")
+						use(xlink:href="#ic-menuFood")
+					span Смотреть всё меню
+				a(href="#").menu-link
+					svg(width="23", height="23")
+						use(xlink:href="#ic-pizza")
+					span Весь раздел
+			.card__item.clearfix
+				.category__tab-item__image
+					img(src="uploads/category-img-1.jpg", alt="Product image")
+					svg.with(width="25", height="25")
+						use(xlink:href="#ic-broccoli")
+					a(href="#").info
+						svg(width="20", height="20")
+							use(xlink:href=`#ic-info`)
+				.card__item-content
+					.category__tab-item__content
+						h5 Чизбургер-пицца
+						p Соус бургер, мясной соус болоньезе, красный лук , моцарелла, томаты и соленые огурчики
+						.clearfix
+							.category__inputBlock.clearfix
+								.category__input.category__input--width
+									input(type="radio")
+									label 25
+								.category__input.category__input--width
+									input(type="radio")
+									label 30
+								.category__input.category__input--width
+									input(type="radio")
+									label 35
+							.category__inputBlock.clearfix
+								.category__input.category__input--height
+									input(type="radio")
+									label Традиционное
+								.category__input.category__input--height
+									input(type="radio")
+									label Тонкое
+					.category__tab-item__bt.clearfix
+						span.price 345 ₽
+						button.btn.btn--lg В корзину
+			include recomend_page
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

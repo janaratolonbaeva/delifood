@@ -1,0 +1,215 @@
+{
+  "title": "DeliFood - быстрая доставка",
+  "menuMainItem": [
+    {
+      "href": "#",
+      "text": "О компании"
+    },
+    {
+      "href": "#",
+      "text": "Доставка"
+    },
+    {
+      "href": "#",
+      "text": "Акции"
+    },
+    {
+      "href": "#",
+      "text": "Контакты"
+    }
+  ],
+  "navMenuItem": [
+    {
+      "href": "#",
+      "width": "35",
+      "height": "35",
+      "text": "БУРГЕРЫ",
+      "icon": "burger"
+    },
+    {
+      "href": "category.html",
+      "width": "35",
+      "height": "35",
+      "text": "ПИЦЦА",
+      "icon": "pizza"
+    },
+    {
+      "href": "#",
+      "width": "28",
+      "height": "35",
+      "text": "РОЛЛЫ",
+      "icon": "rolli"
+    },
+    {
+      "href": "#",
+      "width": "34",
+      "height": "35",
+      "text": "САЛАТЫ",
+      "icon": "salad" 
+    },
+    {
+      "href": "#",
+      "width": "32",
+      "height": "35",
+      "text": "ЛАПША",
+      "icon": "wok" 
+    },
+    {
+      "href": "#",
+      "width": "34",
+      "height": "35",
+      "text": "ЗАКУСКИ",
+      "icon": "snacks" 
+    },
+    {
+      "href": "#",
+      "width": "35",
+      "height": "35",
+      "text": "ДЕСЕРТЫ",
+      "icon": "desert" 
+    },
+    {
+      "href": "#",
+      "width": "30",
+      "height": "35",
+      "text": "НАПИТКИ",
+      "icon": "drinks"
+    }
+  ],
+  "promoItem": [
+    {
+      "image": "1",
+      "new": "НОВИНКА",
+      "title": "ПИЦЦА БУРГЕР",
+      "price": "450₽"
+    },
+    {
+      "image": "1",
+      "new": "НОВИНКА",
+      "title": "ПИЦЦА БУРГЕР",
+      "price": "450₽"
+    },
+    {
+      "image": "1",
+      "new": "НОВИНКА",
+      "title": "ПИЦЦА БУРГЕР",
+      "price": "450₽"
+    }
+  ],
+  "categoryMenuItem": [
+    {
+      "tabLink": "1",
+      "link": "Вегетарианская"
+    },
+    {
+      "tabLink": "2",
+      "link": "Без лука"
+    },
+    {
+      "tabLink": "3",
+      "link": "С мясом"
+    },
+    {
+      "tabLink": "4",
+      "link": "С грибами"
+    },
+    {
+      "tabLink": "5",
+      "link": "Острая"
+    }
+  ],
+  "categoryTabItem": [
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "chili"
+    }
+  ],
+  "recomendItemContent": [
+    {
+      "image": "1"
+    },
+    {
+      "image": "1"
+    },
+    {
+      "image": "1"
+    }
+  ],
+  "recomendItemContentPage": [
+    {
+      "image": "1"
+    },
+    {
+      "image": "1"
+    },
+    {
+      "image": "1"
+    },
+    {
+      "image": "1"
+    }
+  ],
+  "socialItem": [
+    {
+      "class": "vkontakte"
+    },
+    {
+      "class": "facebook"
+    },
+    {
+      "class": "instagram"
+    },
+    {
+      "class": "odnoklassniki"
+    }
+  ],
+  "categoryTabItemPage": [
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "chili"
+    },
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "broccoli"
+    },
+    {
+      "with": "chili"
+    }
+  ],
+  "basketItem": [
+    {
+      "with": "chili"
+    },
+    {
+      "with": "broccoli"
+    }
+  ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,163 @@
+button, input, textarea, select
+  font-family: inherit
+  font-size: inherit
+  line-height: inherit
+  color: inherit
+  border: none
+  outline: none
+  background: transparent
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button
+  -webkit-appearance: none
+  margin: 0
+  
+body
+  font-family: 'Circe Rounded'
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: #473100
+  background: #f8f8f8
+  &.locked
+    overflow: hidden
+.container
+  max-width: 1170px
+  min-width: 315px
+  margin: auto
+  padding: 0 15px
+.hidden 
+  position: absolute
+  overflow: hidden
+  width: 0
+  height: 0
+  pointer-events: none
+.logo 
+  font-family: 'Circe Rounded Alt'
+  font-weight: 800
+  font-size: 36px
+  line-height: 48px
+.btn
+  display: inline-block
+  border-radius: 50px
+  background: $colorWarning
+  text-align: center
+  overflow: hidden
+  position: relative
+  border: 1px solid $colorWarning
+  z-index: 1
+  &::before
+    height: 50px
+    width: 300px
+    content: " "
+    position: absolute
+    top: 0px
+    left: 0px
+    background: orange
+    transform: translatex(-110%) skew(-127deg, -180deg)
+    z-index: -1
+  &:hover
+    &::before
+      animation: diagonal-swipe 500ms linear forwards
+  &--sm 
+    font-size: 12px
+    line-height: 28px
+    text-transform: uppercase
+    padding: 0 15px
+    svg
+      margin-right: 5px
+      vertical-align: middle
+      fill: #473100
+  &--lg 
+    line-height: 38px
+    padding: 0 15px
+    font-size: 16px
+
+@keyframes diagonal-swipe
+  from
+    transform: translatex(-100%) skew(-127deg, -180deg)
+  to
+    transform: translatex(-10%) skew(-127deg, -180deg)
+
+
+.phone
+  font-size: 28px
+  line-height: normal
+  display: inline-block
+  text-align: center
+  +desktop
+    font-size: 30px
+.title
+  font-weight: normal
+  font-size: 40px
+  line-height: 40px
+  +tablet
+    font-size: 48px
+    line-height: 48px
+.mode
+  svg 
+    fill: #75a781
+    vertical-align: middle
+    margin-right: 10px
+.menuMain
+  li
+    a 
+      display: block
+      transition: $transition
+      &:hover
+        text-decoration: underline  
+.breadcrumbs
+  padding: 10px 0
+  li 
+    display: inline-block
+    span
+      opacity: 0.6
+    a
+      &:hover
+        text-decoration: underline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+doctype html
+html(lang="ru")
+  head
+    include includes/head
+    title= title
+  body
+    include includes/svg
+    include includes/header
+    .container
+      include includes/category_page
+      include includes/delivery
+    include includes/footer
+    .overlay
+      .popup.clearfix
+        svg(width="20", height="20").cancel
+          use(xlink:href="#ic-cancel")
+        .category__tab-item__image
+          img(src="uploads/category-img-1.jpg", alt="Product image")
+          .label
+            svg(width="20", height="24")
+              use(xlink:href="#ic-pizzaEdit")
+          svg.with(width="25", height="25")
+            use(xlink:href="#ic-broccoli")
+          a(href="#").info
+            svg(width="20", height="20")
+              use(xlink:href=`#ic-info`)
+        .category__tab-item__content
+          h5 Чизбургер-пицца
+          p Соус бургер, мясной соус болоньезе, красный лук , моцарелла, томаты и соленые огурчики
+          .clearfix
+            .category__inputBlock.clearfix
+              .category__input.category__input--width
+                input(type="radio")
+                label 25
+              .category__input.category__input--width
+                input(type="radio")
+                label 30
+              .category__input.category__input--width
+                input(type="radio")
+                label 35
+            .category__inputBlock.clearfix
+              .category__input.category__input--height
+                input(type="radio")
+                label Традиционное
+              .category__input.category__input--height
+                input(type="radio")
+                label Тонкое
+          .category__tab-item__bt.clearfix
+            span.price 345 ₽
+            .category__basket-amount
+              span -
+              input(type="number", value="1")
+              span +
+            button.btn.btn--lg В корзину
+
+    
+    script(src="libs/jquery/jquery-3.4.1.min.js")
+    script(src="libs/matchHeight/matchHeight.js")
+    script(src="libs/aos-master/aos.js")
+    script(src="libs/fancybox/jquery.fancybox.min.js")
+    script(src="libs/slick/slick.min.js")
+    script(src="libs/jquery-ui-1.12.1/jquery-ui.min.js")
+    script(src="libs/jqueryScrollBar/jquery.mCustomScrollbar.js")
+    script(src="js/main.js")

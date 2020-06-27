@@ -1,0 +1,26 @@
+section.promo
+  button.prev
+    svg(width="30", height="40")
+      use(xlink:href="#ic-chevron")
+  button.next
+    svg(width="30", height="40")
+      use(xlink:href="#ic-chevron")
+  .promo__slider
+    each item in promoItem
+      .promo__item(style=`background-image: url(uploads/bg-promo-${item.image}.jpg)`)
+        .promo__content
+          .new
+            span= item.new
+          h2= item.title
+          .price
+            span= item.price
+        
+    
+
+
+
+
+
+
+
+

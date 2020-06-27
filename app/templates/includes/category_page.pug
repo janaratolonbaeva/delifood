@@ -1,0 +1,109 @@
+include mixin
+section.category
+	.category__title.clearfix
+		h2.title Пицца
+		.category__title--info
+			svg(width="35", height="35")
+				use(xlink:href="#ic-newPizza")
+			span Создай свою пиццу
+	.category__tabs
+		ul.category__menu
+			each item in categoryMenuItem
+				li
+					a(href=`#category-tab-${item.tabLink}`)= item.link
+		.clearfix
+			.category__basket
+				.category__basket-header
+					span КОРЗИНА
+				.category__basket-main
+					.category__basket-item
+						.clearfix
+							.category__basket-image
+								img(src="uploads/category-basket-img-1.jpg", alt="Product image")
+							.category__basket-content.clearfix
+								.category__basket-content__choice
+									h6 Чизбургер-пицца
+									.clearfix
+										svg.with(width="20", height="20")
+											use(xlink:href="#ic-chili")
+										span 35см
+										span Тонкое
+								svg(width="10", height="10").cancel
+									use(xlink:href="#ic-cancel")
+						.clearfix
+							.category__basket-amount
+								span -
+								input(type="number", value="1")
+								span +
+							.category__basket-sum
+								span Итого
+								label
+									input(type="number", value="452")
+									| ₽
+					.category__basket-item
+						.clearfix
+							.category__basket-image
+								img(src="uploads/category-basket-img-1.jpg", alt="Product image")
+							.category__basket-content.clearfix
+								.category__basket-content__choice
+									h6 Чизбургер-пицца
+									.clearfix
+										svg.with(width="20", height="20")
+											use(xlink:href="#ic-chili")
+										span 35см
+										span Тонкое
+								svg(width="10", height="10").cancel
+									use(xlink:href="#ic-cancel")
+						.clearfix
+							.category__basket-amount
+								span -
+								input(type="number", value="1")
+								span +
+							.category__basket-sum
+								span Итого
+								label
+									input(type="number", value="452")
+									| ₽
+					.category__basket-total
+						.clearfix
+							span.total-text Сумма заказа
+							.category__basket-sum
+								label
+									input(type="number", value="900")
+									| ₽
+						.clearfix
+							button(type="reset")
+								svg(width="10", height="10").cancel
+									use(xlink:href="#ic-cancel")
+								| Очистить
+							button.btn.btn--lg Оформить заказ			
+			.category__tab-wrapper
+				.category__tab(id="category-tab-1").clearfix
+					+categoryItem(categoryTabItemPage)
+				.category__tab(id="category-tab-2").clearfix
+					+categoryItem(categoryTabItemPage)
+				.category__tab(id="category-tab-3").clearfix
+					+categoryItem(categoryTabItemPage)
+				.category__tab(id="category-tab-4").clearfix
+					+categoryItem(categoryTabItemPage)
+				.category__tab(id="category-tab-5").clearfix
+					+categoryItem(categoryTabItemPage)
+							
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

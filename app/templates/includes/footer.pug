@@ -1,0 +1,31 @@
+footer.footer
+	.container
+		.footer__top.clearfix
+			a(href="index.html").logo
+				span DeliFood
+			ul.menuMain.clearfix
+				each item in menuMainItem
+					li
+						a(href= item.href)= item.text
+			.footer__phone
+				a(href="#").phone 8 800 123 45 69
+				.mode
+					svg(width="25", height="20")
+						use(xlink:href="#ic-delivery")
+					span Доставка: с 9:00 до 00:00
+			.footer__social.clearfix
+				p Мы рядом
+				each item in socialItem
+					a(href="#")
+						i(class=`icon-${item.class}`)
+			a(href="#").btn.btn--sm
+				svg(width="15", height="13")
+					use(xlink:href="#ic-key")
+				span вход
+		.footer__bt.clearfix
+			p 2019 Копирайт
+			p
+				a(href="#") Политика конфиденциальности
+				a(href="#") Карта сайта
+			p Шаблон разработан 
+				a(href="https://promoaccent.ru", target="_blank") веб-студией PA

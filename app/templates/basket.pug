@@ -1,0 +1,49 @@
+include includes/mixin
+doctype html
+html(lang="ru")
+	head
+		include includes/head
+		title= title
+	body
+		include includes/svg
+		include includes/header
+		.container
+			ul.breadcrumbs
+				li
+					a(href="index.html") Главная 
+				li
+					span - Оформление заказа
+			.basketPage
+				h2.title Оформление заказа
+				.clearfix
+					.order__form
+						.basketPage__block
+							+basketCard(basketItem)
+						include includes/recomend_page
+						.order__agree.clearfix
+							button(type="submit").btn.btn--lg Заказать
+							.basketPage__total
+								span.total-title Сумма заказа
+								span.total 900
+									small ₽
+					.order__basket.accordion
+						.order__accordion
+							h6 Корзина
+							.order__accordion-content.clearfix
+								span.left Сумма заказа
+								span.right 900₽
+						.order__accordion
+							h6 Оформление
+							.order__accordion-content.clearfix
+								span.left Сумма заказа
+								span.right 900₽
+		include includes/footer
+		
+		script(src="libs/jquery/jquery-3.4.1.min.js")
+		script(src="libs/matchHeight/matchHeight.js")
+		script(src="libs/aos-master/aos.js")
+		script(src="libs/fancybox/jquery.fancybox.min.js")
+		script(src="libs/slick/slick.min.js")
+		script(src="libs/jquery-ui-1.12.1/jquery-ui.min.js")
+		script(src="libs/jqueryScrollBar/jquery.mCustomScrollbar.js")
+		script(src="js/main.js")

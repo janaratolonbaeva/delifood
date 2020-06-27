@@ -1,0 +1,108 @@
+mixin categoryItem(content)
+	each item in content
+		.category__tab-col
+			.category__tab-item
+				.category__tab-item__hover
+					p Убрать ингредиенты
+					.choice.clearfix
+						span Сыр моцарелла
+						svg(width="10", height="10").cancel
+							use(xlink:href="#ic-cancel")
+					.choice.clearfix
+						span Томатный соус
+						svg(width="10", height="10").cancel
+							use(xlink:href="#ic-cancel")
+					.add
+						span Добавить ингредиенты
+					.category__tab-item__hover-bt
+						button(type="reset") Отмена
+						button.btn.btn--lg В корзину
+				.label
+					svg(width="20", height="24")
+						use(xlink:href="#ic-pizzaEdit")
+				.category__tab-item__image
+					img(src="uploads/category-img-1.jpg", alt="Product image").item-js
+					svg.with(width="25", height="25")
+						use(xlink:href=`#ic-${item.with}`)
+					a(href="#").info
+						svg(width="20", height="20")
+							use(xlink:href=`#ic-info`)
+				.category__tab-item__content
+					h5 Чизбургер-пицца
+					p Соус бургер, мясной соус болоньезе, красный лук , моцарелла, томаты и соленые огурчики
+					.category__inputBlock.clearfix
+						.category__input.category__input--width
+							input(type="radio")
+							label 25
+						.category__input.category__input--width
+							input(type="radio")
+							label 30
+						.category__input.category__input--width
+							input(type="radio")
+							label 35
+					.category__inputBlock.clearfix
+						.category__input.category__input--height
+							input(type="radio")
+							label Традиционное
+						.category__input.category__input--height
+							input(type="radio")
+							label Тонкое
+				.category__tab-item__bt.clearfix
+					span.price 345 ₽
+					button.btn.btn--lg В корзину
+
+mixin recomendItem(contentRecomend)
+	each item in contentRecomend
+		.category__tab-col
+			.category__tab-item.recomend__item
+				.category__tab-item__image
+					img(src=`uploads/recomend-img-${item.image}.jpg`, alt="Product image")
+					a(href="#").info
+						svg(width="20", height="20")
+							use(xlink:href=`#ic-info`)
+				.category__tab-item__content
+					h5 Куриные крылышки Барбекю
+					p Куриные крылышки в соусе «Барбекю»
+				.category__tab-item__bt.clearfix
+					span.price 345 ₽
+					button.btn.btn--lg В корзину
+
+mixin recomendItemPage(contentRecomendPage)
+	each item in contentRecomendPage
+		.recomend__col
+			.category__tab-item.recomend__item
+				.category__tab-item__image
+					img(src=`uploads/recomend_page-img-${item.image}.jpg`, alt="Product image")
+				.category__tab-item__content
+					h6 Картофель из печи
+				.category__tab-item__bt.clearfix
+					span.price 345 ₽
+					button.btn.btn--lg В корзину
+
+mixin basketCard(contentBasketCard)
+	each item in contentBasketCard
+		.basketPage__item.clearfix
+			.basketPage__item-image
+				img(src="uploads/category-img-1.jpg", alt="Product Image")
+			.basketPage__item-content
+				h5 Чизбургер-пицца
+				.clearfix
+					svg.with(width="25", height="25")
+						use(xlink:href=`#ic-${item.with}`)
+					.choice
+						span.choice-title Размер: 
+						span.choice-text 35см
+					.choice
+						span.choice-title Тесто: 
+						span.choice-text Тонкое
+			.category__basket-amount
+				span -
+				input(type="number", value="1")
+				span +
+			svg(width="15", height="15").cancel
+				use(xlink:href="#ic-cancel")
+			.category__basket-sum
+				label
+					input(type="number", value="452")
+					| ₽
+
